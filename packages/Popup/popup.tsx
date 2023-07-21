@@ -2,7 +2,7 @@ import { createPortal } from 'react-dom';
 import { StyledBackdrop, StyledPopup } from './Popup.styled';
 
 type TPopup = {
-  children?: JSX.Element|JSX.Element[];
+  children?: React.ReactNode;
   showPopup: boolean;
   setShowPopup: () => void;
 }
