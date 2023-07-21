@@ -1,5 +1,5 @@
 import React from 'react';
-import { KanbanBoard } from './Board.styled';
+import { KanbanBoard } from './board.styled';
 
 type TBoard = {
   children?: JSX.Element|JSX.Element[];
