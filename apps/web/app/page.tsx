@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Board } from 'board';
-import { Popup } from 'popup';
+import { Board } from 'Board';
+import { Popup } from 'Popup';
 import { Card } from 'card';
 
 const Col = styled.div`
@@ -15,7 +15,7 @@ type TTodos = {
   column?: string;
 }
 
-export default function Web() {
+export default function Web() { 
   const [todos, setTodos] = React.useState<TTodos[]>([]);
   const [showPopup, setShowPopup] = React.useState<boolean>(false);
   let progress: any = [];
@@ -43,11 +43,12 @@ export default function Web() {
       </Popup>
       <Board>
         <Col>
+        
           <h2>TO DO</h2>
           {
             todos?.map((todo, index) => (
               <div key={index}>
-                {
+                { 
                   todo.column === 'todo' && <Card>
                     <h3>{todo?.title}</h3>
                     <button onClick={() => setTodos((prev) => {
@@ -112,10 +113,13 @@ export default function Web() {
             todos?.map((todo, index) => (
               <div key={index}>
                 {
+                  
                   todo.column === 'done' && <Card bgColor="green">
+                  
                     <h3>{todo?.title}</h3>
                     <b>DONE</b>
                   </Card>
+                  
                 }
               </div>
             ))
