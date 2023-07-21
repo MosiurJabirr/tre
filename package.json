@@ -23,7 +23,7 @@
     "@types/react-leaflet": "^3.0.0",
     "board": "^1.0.0",
     "flag": "^5.0.1",
-    "popup": "^1.0.0",
+    "popup": "^0.0.3",
     "react": "^18.2.0",
     "styled-components": "^6.0.4",
     "swr": "^2.2.0"
